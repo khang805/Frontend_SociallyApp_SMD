@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <!-- Centered Image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <RelativeLayout
+            android:id="@+id/search_container_before"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_shape_search">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/time"
+                />
+
+            <ImageView
+                android:id="@+id/circle_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="170dp"
+                android:src="@drawable/circle_all"
+                />
+
+            <ImageView
+                android:id="@+id/wifi_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="305dp"
+                app:tint="@color/black"
+                android:src="@drawable/wifi"
+                />
+
+            <ImageView
+                android:id="@+id/power_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="320dp"
+                app:tint="@color/black"
+                android:src="@drawable/power"
+                />
+
+            <ImageView
+                android:id="@+id/battery_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="340dp"
+                app:tint="@color/black"
+                android:src="@drawable/battery"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- First line: "from" -->
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="130dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/socially_logo" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="from"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <!-- Second line: "SMD" -->
+
+    <!-- Horizontal Line -->
+    <TextView
+        android:id="@+id/smdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="SMD"
+        android:textColor="#FF8B4513"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="60dp"
+        android:background="#000000" />
+
+</LinearLayout>

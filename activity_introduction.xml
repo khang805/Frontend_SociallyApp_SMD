@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <RelativeLayout
+            android:id="@+id/search_container_before"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/time"
+                />
+
+            <ImageView
+                android:id="@+id/circle_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="170dp"
+                android:src="@drawable/circle_all"
+                />
+
+            <ImageView
+                android:id="@+id/wifi_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="305dp"
+                app:tint="@color/black"
+                android:src="@drawable/wifi"
+                />
+
+            <ImageView
+                android:id="@+id/power_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="320dp"
+                app:tint="@color/black"
+                android:src="@drawable/power"
+                />
+
+            <ImageView
+                android:id="@+id/battery_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="340dp"
+                app:tint="@color/black"
+                android:src="@drawable/battery"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- This takes very little space -->
+    <!-- Fixed small height (no weight needed) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">  <!-- Fixed small height -->
+    </LinearLayout>
+
+    <!-- Socially Title -->
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textColor="#FF8B4513"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp" />
+
+    <!-- Profile Image -->
+
+    <!-- AR Khan Name -->
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/intro_introduction" />
+
+    <TextView
+        android:id="@+id/fromAR_Khan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="AR Khan"
+        android:textColor="#FF8B4513"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Login Button -->
+
+    <!-- Switch Accounts -->
+
+    <TextView
+        android:id="@+id/fromlog_in"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_introduction"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="log in"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fromswitch_accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Switch accounts"
+        android:textColor="#FF8B4513"
+        android:textSize="18sp" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#CCCCCC" />
+
+    <!-- Sign Up Prompt -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Sign up."
+            android:textColor="#FF8B4513"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Accent Line -->
+    <View
+        android:layout_width="150dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#FF8B4513" />
+
+</LinearLayout>
